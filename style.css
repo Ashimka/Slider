@@ -1,0 +1,61 @@
+/*Обнуление*/
+*{padding: 0; margin: 0; border: 0;}
+*,*:before,*:after{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%;	width: 100%; font-size: 100%; line-height: 1; font-size: 14px; -ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%;	-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+.container {
+   margin: 0 auto;   
+   max-width: 1400px;
+   height: 100vh;
+   background-color: thistle;
+   padding: 20px;
+}
+h2{
+   text-align: center;
+   font-size: 22px;
+   padding: 15px 0;
+}
+.opacity-0{
+   opacity: 0;
+}
+
+.infinity-slider-wrap {
+   margin: 0 auto;   
+   width: 600px;
+   height: auto;  
+}
+.infinity-slider {
+   width: 600px;
+   height: 350px;
+   border: 2px solid rgb(228, 12, 174);
+   overflow: hidden;
+   position: relative;
+}
+.infinity-slider img{
+   width: 600px;
+   height: 350px;
+   position: absolute;
+   transition: all ease 1s;
+}
+.infinity-buttons {
+   text-align: center;
+   padding: 20px 0;
+}
+.slider-prev, .slider-next{
+   width: 40px;
+   height: 20px;
+   background-color: rgb(182, 126, 235);
+}
