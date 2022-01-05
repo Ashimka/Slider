@@ -32,3 +32,26 @@ document.querySelector('.slider-next').addEventListener('click', function () {
    }
    slider();
 });
+
+// автолистание слайдера
+
+let timer = setInterval(() => {
+   if (count + 1 == images.length) {
+      count = 0;
+   } else {
+      count++;
+   }
+   slider();
+}, 5000);
+
+// остановка автолистания
+
+const btnPrev = document.querySelector('.slider-prev');
+const btnNext = document.querySelector('.slider-next');
+
+function stopInterval() {
+   clearInterval(timer);
+}
+
+btnPrev.addEventListener('click', stopInterval);
+btnNext.addEventListener('click', stopInterval);
