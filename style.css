@@ -15,11 +15,10 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
-
 .container {
    margin: 0 auto;   
    max-width: 1400px;
-   height: 100vh;
+   height: 100%;  
    background-color: thistle;
    padding: 20px;
 }
@@ -30,24 +29,21 @@ h2{
 }
 .opacity-0{
    opacity: 0;
+   display: none;
 }
 
 .infinity-slider-wrap {
+   max-width: 600px;
    margin: 0 auto;   
-   width: 600px;
-   height: auto;  
 }
 .infinity-slider {
-   width: 600px;
-   height: 350px;
-   border: 2px solid rgb(228, 12, 174);
-   overflow: hidden;
-   position: relative;
+   display: flex;
+   flex-direction: column;  
+   border: 2px solid rgb(228, 12, 174);  
 }
 .infinity-slider img{
-   width: 600px;
-   height: 350px;
-   position: absolute;
+   max-width: 100%;
+   height: auto;
    transition: all ease 1s;
 }
 .infinity-buttons {
